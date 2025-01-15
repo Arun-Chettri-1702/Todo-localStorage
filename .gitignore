@@ -1,15 +1,1 @@
-# Node dependencies
-node_modules/
-
-# Build outputs inside src
-src/dist/
-src/build/
-src/output/
-
-# OS and IDE files
-.DS_Store
-.vscode/
-
-package-lock.json
-package.json
-tailwind.config.js
+node_modules
