@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      .styler {
+        padding: 0.5rem;
+        background-color: #525252;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+      }
+      .styler span {
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+      .styler button {
+        background-color: #7f1d1d;
+        padding: 2px 6px;
+        color: white;
+        border-radius: 6px;
+      }
+      .complete span {
+        text-decoration: line-through;
+      }
+    </style>
+    <script src="./todo_script.js"></script>
+  </head>
+  <body class="bg-gray-900 h-screen w-screen flex justify-center items-center">
+    <main class="min-w-[380px] bg-slate-950 rounded-md">
+      <div id="Container" class="h-full">
+        <h2 class="p-4 text-white text-2xl font-semibold mb-5">Todo App</h2>
+        <div class="p-4 grid gap-2 sm:grid-cols-12 mb-1">
+          <input
+            type="text"
+            placeholder="Add your new todo"
+            class="p-2 rounded-md sm:col-span-9"
+            id="inputContainer"
+          />
+          <button
+            class="bg-purple-700 text-white p-2 rounded-md sm:col-span-3"
+            id="AddButton"
+          >
+            Add
+          </button>
+        </div>
+        <ul class="px-4 py-2 mb-3" id="taskList"></ul>
+      </div>
+    </main>
+  </body>
+</html>
